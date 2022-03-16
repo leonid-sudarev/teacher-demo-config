@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: teacher
+  cloud:
+    bus:
+      enabled: true
+      refresh:
+        enabled: true
+    config:
+      fail-fast: 'true'
+      uri: http://localhost:8888
+      username: root
+      password: 4s64rcqYVvz7C4
+  config:
+    import: 'configserver:http://localhost:8888'
+
+server:
+  port: 7000

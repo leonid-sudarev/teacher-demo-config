@@ -1,0 +1,22 @@
+info:
+  filename: "gateway.yml"
+  filepath: "config/gateway/dev/gateway.yml"
+
+server:
+  port: 9999
+
+spring:
+  cloud:
+    gateway:
+      metrics:
+        enabled: true
+
+
+management:
+  endpoint:
+    gateway:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: '*'
