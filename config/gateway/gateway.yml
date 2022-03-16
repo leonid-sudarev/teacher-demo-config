@@ -1,0 +1,23 @@
+server:
+  port: 9999
+
+spring:
+  cloud:
+    gateway:
+      metrics:
+        enabled: true
+
+
+management:
+  endpoint:
+    gateway:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+logging:
+  level:
+    org:
+      springframework: info

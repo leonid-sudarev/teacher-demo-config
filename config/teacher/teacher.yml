@@ -1,0 +1,16 @@
+server:
+  port: 37987
+
+spring:
+  application:
+    name: teacher
+  cloud:
+    bus:
+      enabled: true
+      refresh:
+        enabled: true
+
+logging:
+  level:
+    org:
+      springframework: info
