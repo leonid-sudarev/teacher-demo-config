@@ -1,0 +1,14 @@
+server:
+  port: 8761
+
+spring:
+  application:
+    name: registry
+  cloud:
+    config:
+      fail-fast: 'true'
+      uri: http://localhost:8888
+      username: root
+      password: 4s64rcqYVvz7C4
+  config:
+    import: 'configserver:http://localhost:8888'
