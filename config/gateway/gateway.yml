@@ -25,5 +25,5 @@ management:
 
 logging:
   level:
-    org:
-      springframework: info
+    org.springframework.cloud.gateway: DEBUG
+    reactor.netty.http.client: DEBUG
