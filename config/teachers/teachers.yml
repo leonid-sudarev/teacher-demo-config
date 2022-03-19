@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: teacher
+    name: teachers
   cloud:
     bus:
       enabled: true
